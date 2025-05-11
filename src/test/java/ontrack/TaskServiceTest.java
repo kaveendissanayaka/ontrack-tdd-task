@@ -14,7 +14,7 @@ public class TaskServiceTest {
 
     @Test
     public void testViewTaskDetailsReturnsCorrectData() {
-        TaskDetail detail = taskService.viewTaskDetails("task101");
+        TaskDetail detail = taskService.viewTaskDetails("task1");
 
         assertNotNull(detail);
         assertEquals("task1", detail.getTaskId());
