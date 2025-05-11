@@ -17,15 +17,15 @@ public class TaskServiceTest {
         TaskDetail detail = taskService.viewTaskDetails("task101");
 
         assertNotNull(detail);
-        assertEquals("task101", detail.getTaskId());
-        assertEquals("student001", detail.getStudentId());
+        assertEquals("task1", detail.getTaskId());
+        assertEquals("s224757274", detail.getStudentId());
         assertEquals("Reviewed", detail.getFeedbackStatus());
 
         String[] messages = detail.getChatMessages();
         assertEquals(3, messages.length);
         assertEquals("Great job!", messages[0]);
-        assertEquals("Fix formatting", messages[1]);
-        assertEquals("Resubmit if possible", messages[2]);
+        assertEquals("formatting has to be fixed", messages[1]);
+        assertEquals("Resubmit after formatting", messages[2]);
     }
 
     @Test
