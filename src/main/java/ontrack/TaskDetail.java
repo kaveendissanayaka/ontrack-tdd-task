@@ -13,6 +13,7 @@ public class TaskDetail {
         this.chatMessages = chatMessages;
     }
 
+    
     public String getTaskId() {
         return taskId;
     }
